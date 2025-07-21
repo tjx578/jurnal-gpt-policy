@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kebijakan Privasi - Jurnal Trading GPT</title>
+</head>
+<body>
+    <h1>Kebijakan Privasi – Jurnal Trading GPT</h1>
+    <p><strong>Terakhir diperbarui:</strong> 19 Juli 2025</p>
+
+    <h2>1. Pengantar</h2>
+    <p>
+        Jurnal Trading GPT adalah sistem analitik berbasis AI yang dirancang untuk membantu trader mengelola dan menganalisis data jurnal trading mingguan, termasuk rencana dan hasil trading, dengan bantuan model bahasa besar seperti GPT. 
+        Kebijakan privasi ini menjelaskan bagaimana informasi Anda dikumpulkan, digunakan, dan dilindungi saat menggunakan GPT ini, termasuk interaksinya dengan API atau file yang Anda unggah.
+    </p>
+
+    <h2>2. Data yang Dikumpulkan</h2>
+    <ul>
+        <li>File CSV atau JSON yang Anda unggah atau akses melalui API.</li>
+        <li>Informasi terkait pair forex, entry/exit, serta hasil trading dan evaluasi mingguan.</li>
+        <li>Prompt atau pertanyaan yang Anda berikan kepada GPT.</li>
+    </ul>
+    <p>
+        Tidak ada data pribadi (seperti nama, email, akun trading riil) yang diminta atau disimpan secara langsung oleh sistem ini.
+    </p>
+
+    <h2>3. Cara Data Digunakan</h2>
+    <p>Data digunakan hanya untuk tujuan berikut:</p>
+    <ul>
+        <li>Membaca dan menafsirkan jurnal trading Anda.</li>
+        <li>Memberikan rekomendasi berbasis data dan hasil analitik.</li>
+        <li>Menyusun rencana trading atau evaluasi berdasarkan masukan mingguan Anda.</li>
+    </ul>
+    <p>GPT ini tidak menyimpan data Anda secara permanen. Semua pemrosesan dilakukan di dalam sesi dan akan dihapus setelah sesi berakhir.</p>
+
+    <h2>4. Akses Pihak Ketiga</h2>
+    <p>
+        Jika Anda menggunakan Custom Action (misalnya membaca file dari server sendiri), GPT dapat mengakses endpoint API yang Anda sediakan. Namun:
+    </p>
+    <ul>
+        <li>Kami tidak berbagi data Anda kepada pihak ketiga.</li>
+        <li>Semua akses file terbatas hanya pada file yang Anda tentukan secara eksplisit.</li>
+    </ul>
+
+    <h2>5. Hak Pengguna</h2>
+    <ul>
+        <li>Tidak membagikan file apapun jika tidak ingin dianalisis.</li>
+        <li>Menghapus semua sesi percakapan Anda kapan saja dari riwayat ChatGPT.</li>
+        <li>Menggunakan GPT ini secara anonim tanpa identifikasi pengguna.</li>
+    </ul>
+
+    <h2>6. Keamanan</h2>
+    <p>
+        Kami mendorong Anda untuk tidak menyisipkan informasi pribadi sensitif dalam file jurnal Anda. Anda bertanggung jawab atas keamanan file yang diunggah, terutama jika menggunakan link publik (Dropbox, Google Drive, GitHub).
+    </p>
+
+    <h2>7. Perubahan Kebijakan</h2>
+    <p>
+        Kebijakan ini dapat diperbarui sewaktu-waktu untuk mencerminkan praktik terbaik atau perubahan layanan. Tanggal perubahan akan ditampilkan di bagian atas dokumen ini.
+    </p>
+
+    <h2>8. Kontak</h2>
+    <p>
+        Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui halaman pembuat GPT atau melalui deskripsi GPT di halaman utama.
+    </p>
+</body>
+</html>

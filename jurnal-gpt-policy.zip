@@ -1,0 +1,73 @@
+from zipfile import ZipFile
+from pathlib import Path
+
+# Buat folder kerja
+base_dir = Path("/mnt/data/jurnal-gpt-policy")
+base_dir.mkdir(exist_ok=True)
+
+# File: privacy-policy-jurnal-gpt.html
+html_content = """<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kebijakan Privasi - Jurnal Trading GPT</title>
+</head>
+<body>
+    <h1>Kebijakan Privasi – Jurnal Trading GPT</h1>
+    <p><strong>Terakhir diperbarui:</strong> 19 Juli 2025</p>
+    <h2>1. Pengantar</h2>
+    <p>Jurnal Trading GPT adalah sistem AI yang membantu analisis dan perencanaan trading. Halaman ini menjelaskan cara kami menangani data Anda.</p>
+    <h2>2. Data yang Dikumpulkan</h2>
+    <ul>
+        <li>File CSV atau JSON trading Anda</li>
+        <li>Prompt yang Anda kirim ke GPT</li>
+    </ul>
+    <h2>3. Penggunaan Data</h2>
+    <p>Semua data hanya diproses di dalam sesi GPT dan tidak disimpan secara permanen.</p>
+    <h2>4. Akses Pihak Ketiga</h2>
+    <p>Kami tidak membagikan data Anda ke pihak luar. File hanya diakses jika Anda menyediakannya secara eksplisit.</p>
+    <h2>5. Hak Anda</h2>
+    <p>Anda bebas menghapus data, menggunakan GPT secara anonim, dan tidak wajib membagikan file apapun.</p>
+    <h2>6. Keamanan</h2>
+    <p>Jangan unggah informasi sensitif. Anda bertanggung jawab atas keamanan file publik Anda.</p>
+    <h2>7. Perubahan Kebijakan</h2>
+    <p>Kebijakan ini dapat diperbarui sewaktu-waktu.</p>
+    <h2>8. Kontak</h2>
+    <p>Hubungi kami melalui halaman pembuat GPT.</p>
+</body>
+</html>
+"""
+
+# File: index.html (redirect ke privacy policy)
+index_content = """<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta http-equiv="refresh" content="0; URL='privacy-policy-jurnal-gpt.html'" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="privacy-policy-jurnal-gpt.html">Kebijakan Privasi</a>...</p>
+</body>
+</html>
+"""
+
+# File: README.md
+readme_content = """# Jurnal GPT Policy
+
+Repositori ini berisi file kebijakan privasi untuk penggunaan Custom GPT yang mengakses jurnal trading.
+
+Lihat di: [privacy-policy-jurnal-gpt.html](https://tjx578.github.io/jurnal-gpt-policy/privacy-policy-jurnal-gpt.html)
+"""
+
+# Simpan file
+(base_dir / "privacy-policy-jurnal-gpt.html").write_text(html_content, encoding="utf-8")
+(base_dir / "index.html").write_text(index_content, encoding="utf-8")
+(base_dir / "README.md").write_text(readme_content, encoding="utf-8")
+
+# Buat file ZIP
+zip_path = Path("/mnt/data/jurnal-gpt-policy.zip")
+with ZipFile(zip_path, "w") as zipf:
+    for file in base_dir.iterdir():
+        zipf.write(file, arcname=file.name)
+
+zip_path.name
